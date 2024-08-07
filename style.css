@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height:700px;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 3px solid blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    margin: auto;  /*This will place the box at center*/
+    transition: all 1s linear 1s ;
+    
+}
+
+.box:hover{
+   transform: rotate(-360deg) scale(2.5) translate(100px,-100px) skew(30deg) ; /*anticlockwise*/
+   
+  /*  transform: rotate(45deg);
+
+   transform: scale(1.5);   /*  box bada ho rha h */
+   
+  /* transform: skew(30deg); /*tilt*/
+
+  /* transform: translate(100px,-100px);*/
+
+   box-shadow: 6px 6px 190px 10px red ;
+   background-color: #eccf0e;
+   
+}
+
+p{
+    font-size: large;
+}

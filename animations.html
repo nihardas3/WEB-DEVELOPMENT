@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+           background-color: beige;
+           border: 3px solid blue;
+           height:700px;
+           width: 700px;
+           /* display: flex;
+           justify-content: center;
+           align-items: center; */ 
+
+        }
+        .box1{
+            height: 90px;
+            width: 190px;
+            background-color: aquamarine;
+            border: 3px solid blue;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /* animation-name:op ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;  /*  same speed at start n end*/
+           /* animation-timing-function: cubic-bezier(1,-0.4,1,1);      /* vor different speed at start n end  */
+            /* animation-direction: alternate; 
+            animation-fill-mode: forwards; where wire do after last frame */
+            animation: 5s linear 1s alternate infinite  none running opname1;
+           /*   duration , timing-functn , delay , iteration-count , direction , fill-mode , play-state , name */
+        }
+
+        .box2{
+            height: 90px;
+            width: 190px;
+            background-color: aquamarine;
+            border: 3px solid blue;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s linear 1s alternate infinite  none running opname2;
+        }
+
+        .circle{
+           width: 40px;
+           height: 40px;
+            background-color: rgb(1, 60, 99);
+            border: 3px solid blue;
+            border-radius: 90px;
+            position: relative;
+            animation: 6s ease-in 1s alternate infinite  forwards running circle1;
+        }
+
+        @keyframes opname1{
+                from{
+                    top:0px;    /* (top se kitna niche) */
+                    left: 0px;   /* (left se kitna niche) */
+                }
+                to{
+                    top: 0px;
+                   left: 500px;
+
+                }
+            }
+        @keyframes opname2{
+                from{
+                    top: 420px;    /* (top se kitna niche) */
+                    left:490px;   /* (left se kitna niche) */
+                }
+                to{
+                   top: 420px;
+                   left: 0px;
+
+                }
+            }
+
+        @keyframes circle1{
+                0%{
+                    top: 0%;    /* (top se kitna niche) */
+                    left: 5%;   /* (left se kitna niche) */
+                }
+                25%{
+                    top:0%;
+                   left: 90%;
+                }
+                50%{
+                    top: 75%;
+                   left: 5%;
+
+                }
+                95%{
+                    top: 75%;
+                   left: 90%;
+
+                }
+                100%{
+                    top: 0%;
+                   left: 0%;
+
+                }
+            }   
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1">'
+
+        </div>
+
+        <div class="circle">'
+
+        </div>
+         
+         <div class="box2">'
+
+         </div>
+         
+
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

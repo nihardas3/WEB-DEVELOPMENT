@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+            --primary-colour:red;
+            --custom-width: 230ppx
+        }
+
+
+        .container{
+            width: var(--custom-width);    /* width input using variable  */
+            background-color: beige;
+            height: 650px;
+             border:5px solid var(--primary-colour);  /* color input using variable  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        .box{
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid rgb(0, 0, 0);
+            box-shadow: 10px 20px 30px 9px brown; /* (+-x,+-y,blur radius,spread radius  , + = down/right  and   - = up/left*/
+            box-shadow: inset 10px 20px 900px 10px tomato;  /*same shadow work but for inside the box */
+           /* box-shadow: 10px 10px 9px red, 20px -40px 9px blue; /*{ for multiple shadows use , }*/
+        
+        #heading1{
+            text-shadow:6px 6px rgb(249, 217, 9) ,12px 12px rgb(244, 93, 7)  ;
+
+        }
+        
+        
+        
+        
+        }
+        #img{
+            width: 100px;
+            height: 100px;
+        }
+
+
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="container">
+        <div class="box">
+            <img id="img" src="palace.jpg" alt="">
+           <h2 id="heading1">Welcome to code</h2>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, doloremque facilis! Reiciendis ducimus facere in unde quo cupiditate quidem. Itaque placeat commodi natus rerum quisquam!</p>
+
+
+
+        </div>
+
+
+
+    </div>
+</body>
+</html>

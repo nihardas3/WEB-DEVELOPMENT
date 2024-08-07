@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+div{
+        border: 1px solid;
+    }
+img{
+    margin: 10px;
+
+}
+
+.img2{
+    position: relative;
+    top: 30px;
+}
+.img3{
+    position:sticky;
+    top: 0px;
+}
+
+.img6{
+    position: absolute;
+    top: 400px;
+}
+.container{
+   height: 300px;
+    background-color: beige;
+}
+.img8{
+    position:fixed;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+ <!-- {ctrl+/ }   Relative on 2 will keep its position same and preserve its position 
+ Absolute positioning on 2 will make the img3 
+take img2 s position and overlap img 2 not maintain gap wrt closese position
+fixed positioning is fixed for entire webpage but sticky is for its parent container or box
+
+
+-->
+
+
+
+
+    <div class="container">
+<legend>Relative positioning</legend>
+<br><br>
+        <img src="palace.jpg "
+         alt="p1"
+         height="200px"
+         width="200px"
+         class="img1"
+         >
+
+         <img src="palace.jpg "
+         alt="p2"
+         height="200px"
+         width="200px"
+         class="img2"
+         >
+
+         <img src="palace.jpg "
+         alt="p3"
+         height="200px"
+         width="200px"
+         class="img3 ">
+
+         <img src="palace.jpg"
+         alt="p3"
+         height="200px"
+         width="200px"
+         class="img4">
+
+   
+    </div>
+    <br><br><br><br>
+
+    <div class="container" >
+        <legend> Absolute positioning</legend>
+
+<br><br>
+        <img src="palace.jpg "
+         alt="p1"
+         height="200px"
+         width="200px"
+         class="img5"
+         >
+
+         <img src="palace.jpg "
+         alt="p2"
+         height="200px"
+         width="200px"
+         class="img6"
+         >
+
+         <img src="palace.jpg "
+         alt="p3"
+         height="200px"
+         width="200px"
+         class="img7">
+
+         <img src="palace.jpg"
+         alt="p3"
+         height="200px"
+         width="200px"
+         class="img8">
+
+   
+    </div>
+
+</body>
+</html>

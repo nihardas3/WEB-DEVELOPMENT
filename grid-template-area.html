@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body{
+        width: 100%;
+        height: 100%;
+    }
+    .cont{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 1rem;
+        background-color: #52849e;
+        border: 2px solid black;
+        padding: 4rem;
+
+        grid-template-areas: 
+             "header header header"
+             "sidebar item3 item3"
+             "sidebar item4 item5"
+             "footer footer footer"
+        ;
+    }
+    .item{
+        background-color: #a27f7f;
+        border: 2px solid black;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #A{
+          grid-area: header;
+    }
+    #B{
+        grid-area: sidebar;
+    }
+    #C{
+        grid-area: item3;
+    }
+    #D{
+        grid-area: item4;
+    }
+    #E{
+        grid-area: item5;
+    }
+    #F{
+        grid-area:footer;
+    }
+/* STEPS TO FOLLOW:
+  1.give Id
+  2. use id and give name to grid area
+  3. grid-template-area m us grid names 
+  put karo acc to order u want*/
+
+</style>
+
+</head>
+<body>
+    <div class="cont">
+        <div id="A" class="item">A</div>
+        <div id="B" class="item">B</div>
+        <div id="C" class="item">C</div>
+        <div id="D"  class="item">D</div>
+        <div id="E" class="item">E</div>
+        <div id="F" class="item">F</div>
+    </div>
+    
+
+
+
+</body>
+</html>

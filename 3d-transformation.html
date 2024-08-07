@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        background-color: #d1c29f;
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+    .item{
+        padding: 2rem;
+        height: 150px;
+        width: 150px;
+        background-color: #7b7777;
+        border: 2px solid black;
+    }
+#a:hover{
+    transform: rotatex(45deg);
+}
+#b:hover{
+    transform: rotatey(45deg);
+}
+#c:hover{
+    transform: rotatez(45deg);
+}
+#d:hover{
+    transform: translatex(100px);
+}
+#e:hover{
+    transform: translatey(100px);
+}
+#f:hover{
+    transform: perspective(300px) translatez(100px);
+}
+#g:hover{
+    transform: scalex(1.5);
+}
+#h:hover{
+    transform: scaley(1.5);
+}
+#i:hover{
+    transform:perspective(300px) scalez(1.5) rotatey(45deg) rotatex(45deg);
+}
+
+
+
+
+
+ </style>
+
+</head>
+<body>
+    
+
+
+    <div class="container">
+
+        <div id="a" class="item">rotatex</div>
+        <div id="b" class="item">rotatey</div>
+        <div id="c" class="item">rotatez</div>
+        <div id="d" class="item">translatex</div>
+        <div id="e" class="item">translatey</div>
+        <div id="f" class="item">translatez</div>
+        <div id="g" class="item">scalex</div>
+        <div id="h" class="item">scaley</div>
+        <div id="i" class="item">scalez</div>
+    </div>
+</body>
+</html>

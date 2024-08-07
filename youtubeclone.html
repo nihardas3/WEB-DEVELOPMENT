@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e44040;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-barinput{
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #a50a0a;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.user-profile {
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video {
+    width: calc(33.333% - 20px);
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.thumbnail {
+    background-color: #ccc;
+    height: 180px;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.video-info p {
+    margin: 0;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">My YouTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="user-profile">Profile</div>
+    </header>
+    <main>
+        <div class="video-grid">
+            <div class="video">
+                <div class="thumbnail"></div>
+                <div class="video-info">
+                    <iframe height="200px" width="270px" src="https://www.youtube.com/embed/h_D3VFfhvs4" ></iframe>
+                    <h4>Michael Jackson-Smooth Criminal</h4>
+                    <p>Michael Jackson</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumbnail"></div>
+                <div class="video-info">
+                    <h4>Video Title 2</h4>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumbnail"></div>
+                <div class="video-info">
+                    <h4>Video Title 3</h4>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumbnail"></div>
+                <div class="video-info">
+                    <h4>Video Title 4</h4>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumbnail"></div>
+                <div class="video-info">
+                    <h4>Video Title 5</h4>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+            <div class="video">
+                <div class="thumbnail"></div>
+                <div class="video-info">
+                    <h4>Video Title 6</h4>
+                    <p>Channel Name</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
